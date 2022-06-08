@@ -12,6 +12,16 @@ public class MovePlayer : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rb.velocity = new Vector3(_joystick.Horizontal * _moveSpeed, _rb.velocity.y, _joystick.Vertical * _moveSpeed); 
+        _rb.velocity = new Vector3(_joystick.Horizontal * _moveSpeed, _rb.velocity.y, _joystick.Vertical * _moveSpeed);
+
+        if (_joystick.Horizontal != 0 || _joystick.Vertical != 0)
+        {
+            transform.rotation = Quaternion.LookRotation(_rb.velocity);
+            _animation.SetBool("isRunning", true);
+        }
+        else
+        {
+            _animation.SetBool("isRunning", false);
+        }
     }
 }

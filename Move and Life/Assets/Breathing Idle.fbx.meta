@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a35aeaee1b59ee34b8cae1789b29d423
+guid: 58b593f1b3f993d409ef1b19bd352880
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable:
@@ -11,52 +11,52 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch08_1001_Diffuse
-    second: {fileID: 2800000, guid: df6559b35bba16142acf89abbd98f9c9, type: 3}
+    second: {fileID: 2800000, guid: 3a5d10477b3867e41a4eae0885c51586, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch08_1001_Glossiness
-    second: {fileID: 2800000, guid: 9c6cf92ec56eedb479a4d39289a1c83a, type: 3}
+    second: {fileID: 2800000, guid: 1cdb006ba3ca47e418acd76ac7e01ef7, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch08_1001_Normal
-    second: {fileID: 2800000, guid: 9d534b635ab570c4e8dae4f6eeb79193, type: 3}
+    second: {fileID: 2800000, guid: 9e33aa1b47f4406489044fd1b1eac98e, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch08_1001_Specular
-    second: {fileID: 2800000, guid: ff199a9f4d583824a8f1cb70aa0b04b1, type: 3}
+    second: {fileID: 2800000, guid: 8e67f869763d40a4ab65eaaa937ee8d4, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch08_1002_Diffuse
-    second: {fileID: 2800000, guid: 30f0b8a933089c845bff7272e53ad387, type: 3}
+    second: {fileID: 2800000, guid: 7c3bcd45158d5114db4f6a3545ae8372, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch08_1002_Glossiness
-    second: {fileID: 2800000, guid: 2f5e0530fa260c8439c52015999e0a8b, type: 3}
+    second: {fileID: 2800000, guid: e64525643b9397a4094ff255830a71a0, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch08_1002_Normal
-    second: {fileID: 2800000, guid: 3badadc5a4039174294399e9f52a496a, type: 3}
+    second: {fileID: 2800000, guid: 938d269c5839e6c43b7c1ab536b3662f, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch08_1002_Specular
-    second: {fileID: 2800000, guid: bce4ee335282ef649ab68d93e7097c2f, type: 3}
+    second: {fileID: 2800000, guid: 85bf498fd13349743a5f4f27bdfdf34b, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch08_1003_Diffuse
-    second: {fileID: 2800000, guid: 99dbffa943c0eb14091ef0922f126378, type: 3}
+    second: {fileID: 2800000, guid: 686d012dd295b1c469f4e178247b8598, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Ch08_1003_Normal
-    second: {fileID: 2800000, guid: 23de1689a6a48ce43b0296899c8c4f49, type: 3}
+    second: {fileID: 2800000, guid: 72792f26a0c4fc34a88312b61c4db9e8, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -76,7 +76,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -137,13 +137,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
