@@ -10,6 +10,9 @@ public class MovePlayer : MonoBehaviour
 
     [SerializeField] private float _moveSpeed;
 
+    public Sound _sound;
+
+
     private void FixedUpdate()
     {
         _rb.velocity = new Vector3(_joystick.Horizontal * _moveSpeed, _rb.velocity.y, _joystick.Vertical * _moveSpeed);
@@ -20,7 +23,7 @@ public class MovePlayer : MonoBehaviour
             _animation.SetBool("isRunning", true);
         }
         else
-        {
+        { 
             _animation.SetBool("isRunning", false);
         }
     }
