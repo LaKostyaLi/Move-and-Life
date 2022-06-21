@@ -31,18 +31,5 @@ public class Counter : MonoBehaviour
         _fire_1Text.text = "" + _fire_1;
         _fire_2Text.text = "" + _fire_2;
         _fire_3Text.text = "" + _fire_3;
-
-        if(_spichki> 2)
-        {
-
-        }
-        if (_bumaga > 2)
-        {
-
-        }
-        if (_shepki > 2)
-        {
-
-        }
     }
 }
