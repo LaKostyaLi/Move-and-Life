@@ -61,33 +61,33 @@ public class Craft : MonoBehaviour
         {
             task1_1 = false;
             _spichki.text = "Не хватает спичек";
+            StartCoroutine(TimeFoItem());
         }
         else
         {
             task1_1 = true;
-            _spichki.text = "";
         }
 
         if(_counter._bumaga < 1)
         {
             task1_2 = false;
             _bumaga.text = "Не хватает бумаги";
+            StartCoroutine(TimeFoItem());
         }
         else
         {
             task1_2 = true;
-            _bumaga.text = "";
         }
 
         if(_counter._shepki < 1)
         {
             task1_3 = false;
             _shepki.text = "Не хватает щепок";
+            StartCoroutine(TimeFoItem());
         }
         else
         {
             task1_3 = true;
-            _shepki.text = "";
         }
 
         if (task1_1==true & task1_2 == true & task1_3 ==true)
@@ -111,11 +111,12 @@ public class Craft : MonoBehaviour
         {
             task2_1 = false;
             _fire1.text = "Не хватает огня уровня 1";
+
+            StartCoroutine(TimeFoItem());
         }
         else
         {
             task2_1 = true;
-            _fire1.text = "";
         }
 
         if (task2_1 == true)
@@ -130,13 +131,14 @@ public class Craft : MonoBehaviour
     {
         if (_counter._fire_2  < 2)
         {
-            _fire2.text = "Не хватает огня уровня 2";
             task3_1 = false;
+            _fire2.text = "Не хватает огня уровня 2";
+
+            StartCoroutine(TimeFoItem());
         }
         else
         {
             task3_1 = true;
-            _fire2.text = "";
         }
 
         if (task3_1 == true)
@@ -148,12 +150,24 @@ public class Craft : MonoBehaviour
         }
     }
 
+    IEnumerator TimeFoItem()
+    {
+        yield return new WaitForSeconds(2f);
+        _spichki.text = "";
+        _bumaga.text = "";
+        _shepki.text = "";
+
+        _fire1.text = "";
+        _fire2.text = "";
+    }
+
     IEnumerator TimeToFire2()
     {
         yield return new WaitForSeconds(5f);
         _counter._fire_2 += 1;
 
-        _sklad2.CounterSklad2Update();
+        _fire1.text = "";
+       _sklad2.CounterSklad2Update();
         _counter.CounterUpdate();
     }
 
@@ -161,6 +175,8 @@ public class Craft : MonoBehaviour
     {
         yield return new WaitForSeconds(10f);
         _counter._fire_3 += 1;
+
+        _fire2.text = "";
         _counter.CounterUpdate();
     }
 }

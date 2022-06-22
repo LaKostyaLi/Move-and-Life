@@ -8,6 +8,7 @@ public class Sklad_2 : MonoBehaviour
     public int _fire1_OnSklad2;
 
     public Text _skladFire1;
+    public Text _fireOnBack;
 
     public FireBackPack _fireBackPack;
     public Craft _craft;
@@ -33,7 +34,15 @@ public class Sklad_2 : MonoBehaviour
         else
         {
             _fire1_OnSklad2 = _fire1_OnSklad2;
-            Debug.Log("В инвентаре нет огня 1 уровня");
+            _fireOnBack.text = "В инвентаре нет огня 1 уровня";
+
+            StartCoroutine(TimeToItem());
         }
+    }
+
+    IEnumerator TimeToItem()
+    {
+        yield return new WaitForSeconds(2f);
+        _fireOnBack.text = "";
     }
 }

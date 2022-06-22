@@ -9,6 +9,7 @@ public class FireBackPack : MonoBehaviour
     public Text _fire1_onBack;
     public Counter _counter;
 
+    public Text _fireToSklad1;
     public int _fire_1onBack;
 
     public void CounterBackPackUpdate()
@@ -30,8 +31,15 @@ public class FireBackPack : MonoBehaviour
         }
         else
         {
-            Debug.Log("На складе №1 нет огня 1 уровня");
+            _fireToSklad1.text = "На складе №1 нет огня 1 уровня";
+            StartCoroutine(TimeToItem());
             _fire_1onBack = _fire_1onBack;
         }
+    }
+
+    IEnumerator TimeToItem()
+    {
+        yield return new WaitForSeconds(2f);
+        _fireToSklad1.text = "";
     }
 }
