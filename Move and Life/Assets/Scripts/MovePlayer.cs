@@ -27,4 +27,9 @@ public class MovePlayer : MonoBehaviour
             _animation.SetBool("isRunning", false);
         }
     }
+
+    public void Death()
+    {
+        _animation.Play("Die");
+    }
 }
