@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   public ItemsUp _itemsUp;
+   void NextLevel()
+   {
+        if(_itemsUp._image.color == Color.green)
+        {
+            Debug.Log("You need fast help your wife");
+        }
+   }
 }

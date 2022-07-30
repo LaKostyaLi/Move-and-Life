@@ -5,12 +5,16 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
+
     public float _health = 100f;
+    [SerializeField] private GameObject _joystick;
+    [SerializeField] private GameObject _buttonRestart;
 
     [SerializeField] private Slider _slider;
-    public Image _image;
 
+    public Image _image;
     public MovePlayer _movePlayer;
+  
     private void Update()
     {
         _slider.value = _health;
@@ -27,6 +31,12 @@ public class Health : MonoBehaviour
         if (_health == 0)
         {
             _movePlayer.Death();
+            DieUi();
         }
+    }
+    void DieUi()
+    {
+        _joystick.SetActive(false);
+        _buttonRestart.SetActive(true);
     }
 }

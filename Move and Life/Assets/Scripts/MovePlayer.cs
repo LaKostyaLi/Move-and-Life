@@ -32,4 +32,9 @@ public class MovePlayer : MonoBehaviour
     {
         _animation.Play("Die");
     }
+
+    public void Restart()
+    {
+        _animation.Play("Idle");
+    }
 }

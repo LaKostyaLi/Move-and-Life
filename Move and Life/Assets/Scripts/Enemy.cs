@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
 
         if(distance > 40)
         {
-            _myAgent.enabled = false; //отключаем агента
+            _myAgent.enabled = false; 
             _animator.Play("IdleZ");
         }
 
@@ -39,7 +39,6 @@ public class Enemy : MonoBehaviour
         if (distance <= 5 & _hpPlayer._health > 0) 
         {
             _myAgent.enabled = false;
-            
             _animator.Play("AtackZ");
         }
 
