@@ -14,6 +14,7 @@ public class Health : MonoBehaviour
 
     public Image _image;
     public MovePlayer _movePlayer;
+    public GameManager _gm;
   
     private void Update()
     {

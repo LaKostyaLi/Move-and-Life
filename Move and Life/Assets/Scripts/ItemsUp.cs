@@ -24,6 +24,6 @@ public class ItemsUp : MonoBehaviour
         _item.SetActive(false);
         _image.color = Color.green;
 
-        _gm._task++;
+        _gm._tasks+=1;
     }
 }
