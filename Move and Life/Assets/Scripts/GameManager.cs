@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        _tasks = 0;
+        _tasks = 0;     
     }
     private void Update()
     {

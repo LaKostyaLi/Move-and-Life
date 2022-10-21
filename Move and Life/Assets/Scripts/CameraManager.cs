@@ -9,7 +9,7 @@ public class CameraManager : MonoBehaviour
     private float _cameraSpeed = 1.5f;
 
     private bool _inCar = false;
-
+  
     private void FixedUpdate()
     {
         if(_inCar == false)

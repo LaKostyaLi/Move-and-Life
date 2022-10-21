@@ -10,7 +10,7 @@ public class TriggerButtonCar : MonoBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
-        if(_gm._tasks == 6)
+        if(_gm._tasks > 5)
         {
             if (collider.tag == "Player")
             {
